@@ -9,7 +9,7 @@ ext.versions = [
 
         // Gradle buildscript plugins
         aptGradlePlugin: '1.8',
-        retrolambdaGradlePlugin: '3.2.5',
+        retrolambdaGradlePlugin: '3.3.0-beta4',
         androidDevMetricsGradlePlugin: '0.4',
 
         // Libraries
