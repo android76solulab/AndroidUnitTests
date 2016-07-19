@@ -44,13 +44,19 @@ public class OperatorPrecedenceTest {
 
     @Test
     public void testOrderOfOperations_PowerOverMultiplication() {
-        assertThat(Operator.Precedence.POWER_PRECENDENCE.getValue())
+        assertThat(Operator.Precedence.POWER_PRECEDENCE.getValue())
                 .isGreaterThan(Operator.Precedence.MULTIPLICATION_PRECEDENCE.getValue());
     }
 
     @Test
     public void testOrderOfOperations_PowerOverDivision() {
-        assertThat(Operator.Precedence.POWER_PRECENDENCE.getValue())
+        assertThat(Operator.Precedence.POWER_PRECEDENCE.getValue())
                 .isGreaterThan(Operator.Precedence.DIVISION_PRECEDENCE.getValue());
+    }
+
+    @Test
+    public void testOrderOfOperations_SQRTOverMultiplication() {
+        assertThat(Operator.Precedence.SQRT_PRECEDENCE.getValue())
+                .isGreaterThan(Operator.Precedence.MULTIPLICATION_PRECEDENCE.getValue());
     }
 }

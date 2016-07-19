@@ -17,7 +17,8 @@ public abstract class Operator extends Input {
         SUBTRACTION_PRECEDENCE(2),
         MULTIPLICATION_PRECEDENCE(3),
         DIVISION_PRECEDENCE(3),
-        POWER_PRECENDENCE(4);
+        POWER_PRECEDENCE(4),
+        SQRT_PRECEDENCE(4);
 
         private int value;
 
